@@ -22,6 +22,11 @@ public class PersonController {
         this.sessionTemplate.selectOne("users.test");
         return "main";
     }
+    @RequestMapping("/test")
+    public String test(Map<String, Object> map) {
+        this.sessionTemplate.selectOne("users.test");
+        return "main";
+    }
 
 
 }
